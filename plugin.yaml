@@ -1,0 +1,40 @@
+# What a screen gets when it takes this plugin: three settings (on/off, hour, minute) kept on the screen and shown in
+# Home Assistant, and the alarm itself, which beeps on the screen's speaker (ts_speaker, the feature speaker).
+switch:
+  - platform: template
+    id: alarm_clock_on
+    name: "Alarm"                    # key alarm
+    icon: mdi:alarm
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_OFF
+    entity_category: config
+
+number:
+  - platform: template
+    id: alarm_clock_hour
+    name: "Alarm hour"               # key alarm_hour
+    icon: mdi:clock-outline
+    optimistic: true
+    min_value: 0
+    max_value: 23
+    step: 1
+    initial_value: 7
+    restore_value: true
+    entity_category: config
+  - platform: template
+    id: alarm_clock_minute
+    name: "Alarm minute"             # key alarm_minute
+    icon: mdi:clock-outline
+    optimistic: true
+    min_value: 0
+    max_value: 59
+    step: 1
+    initial_value: 0
+    restore_value: true
+    entity_category: config
+
+alarm_clock:
+  speaker: ts_speaker
+  alarm_on: alarm_clock_on
+  hour: alarm_clock_hour
+  minute: alarm_clock_minute

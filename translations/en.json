@@ -1,0 +1,23 @@
+{
+  "_meta": { "name": "English" },
+  "screen": {
+    "wake_up": "Wake up!",
+    "alarm_at": "Alarm {time}",
+    "alarm_off": "Alarm off",
+    "setting_alarm": "Alarm",
+    "setting_hour": "Alarm hour",
+    "setting_minute": "Alarm minute"
+  },
+  "app": {
+    "name": "Alarm clock",
+    "summary": "A clock tile with a daily alarm that beeps on the screen's speaker.",
+    "tile_name": "Alarm clock",
+    "tile_example": "07:30 and the alarm at 06:45",
+    "setting_alarm": "Alarm",
+    "setting_alarm_hint": "Turns the daily alarm on or off.",
+    "setting_hour": "Alarm hour",
+    "setting_hour_hint": "The hour the alarm goes off, 0 to 23.",
+    "setting_minute": "Alarm minute",
+    "setting_minute_hint": "The minute the alarm goes off, 0 to 59."
+  }
+}

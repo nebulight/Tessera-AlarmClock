@@ -1,0 +1,4 @@
+# What tools/preview.py shows: the tile on every kind of screen (docs/PREVIEW.md).
+tiles:
+  - tile: clock
+    name: Alarm clock

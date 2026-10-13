@@ -1,0 +1,23 @@
+{
+  "_meta": { "name": "Nederlands" },
+  "screen": {
+    "wake_up": "Opstaan!",
+    "alarm_at": "Wekker {time}",
+    "alarm_off": "Wekker uit",
+    "setting_alarm": "Wekker",
+    "setting_hour": "Wekker uur",
+    "setting_minute": "Wekker minuut"
+  },
+  "app": {
+    "name": "Wekker",
+    "summary": "Een kloktegel met een dagelijkse wekker die piept op de luidspreker van het scherm.",
+    "tile_name": "Wekker",
+    "tile_example": "07:30 en de wekker om 06:45",
+    "setting_alarm": "Wekker",
+    "setting_alarm_hint": "Zet de dagelijkse wekker aan of uit.",
+    "setting_hour": "Wekker uur",
+    "setting_hour_hint": "Het uur waarop de wekker gaat, 0 tot 23.",
+    "setting_minute": "Wekker minuut",
+    "setting_minute_hint": "De minuut waarop de wekker gaat, 0 tot 59."
+  }
+}

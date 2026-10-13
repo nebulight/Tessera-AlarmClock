@@ -1,0 +1,31 @@
+# Alarm clock: a clock tile, one daily alarm, and a beeping sound on the screen's speaker.
+# The alarm's settings are entities of plugin.yaml, so Home Assistant and automations can change them too.
+id: alarm_clock
+version: 0.1.0
+api: "0.8"
+icon: alarm
+maintainer: your-github-name-here
+license: MIT
+stage: beta
+topics: [time]
+requires:
+  esphome: 2026.9.0
+  psram: true
+  features: [speaker]
+boards: any
+flash_kb: 90
+
+# The three entities of plugin.yaml, by their names written as ids.
+settings:
+  - { key: alarm, label: setting_alarm, hint: setting_alarm_hint }
+  - { key: alarm_hour, label: setting_hour, hint: setting_hour_hint }
+  - { key: alarm_minute, label: setting_minute, hint: setting_minute_hint }
+
+tiles:
+  # The time, and under it when the alarm goes off. It draws on the screen alone.
+  - id: clock
+    name: tile_name
+    icon: alarm
+    sizes: { min: 1x1, max: 2x1 }
+    memory: 400
+    example: tile_example
